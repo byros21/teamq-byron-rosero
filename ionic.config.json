@@ -1,0 +1,7 @@
+{
+  "name": "app-teamq",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

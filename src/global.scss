@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,33 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.card-noticia {
+    transition: transform .2s; 
+    height: 90% !important;
+}
+
+.card-noticia:hover {
+    //box-shadow: 0px 0px 5px 2px #f50000;
+    //border: 3px solid rgb(214, 0, 0);
+    transform: scale(1.05);
+
+    ion-button.btn-noticia {
+        visibility: visible !important;
+        //background: #3880ff;
+
+        //background: rgb(45, 134, 241);
+    }
+
+    ion-card-header {
+        background: #3880ff;
+        color: #fff;
+    }
+}
+
+.btn-noticia {
+    visibility: hidden;
+    position: relative;
+    color: #3880ff;
+    //background: rgb(45, 134, 241);
+}

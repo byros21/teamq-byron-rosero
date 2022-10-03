@@ -1,0 +1,23 @@
+<!-- <h1> componente2 </h1> -->
+
+<ion-grid class="ion-no-padding" >
+    <ion-row>
+
+        <ion-col sizeXl="3" sizeLg="6" sizeMd="6" sizeSm="6" sizeXs="12"   *ngFor="let item of data" class="ion-padding" >
+            <ion-card style="" class="card-noticia">
+                <ion-card-header color="light" >
+                    <ion-card-subtitle> <strong> {{ item.title }} </strong> </ion-card-subtitle>
+                </ion-card-header>
+                <ion-card-content>
+                    <span>
+                        {{ item.content }}
+                    </span>
+                </ion-card-content>
+                <ion-button [href]="item.link" expand="block" fill="clear" shape="round" target="_blank" class="btn-noticia" >
+                    Leer mas...
+                </ion-button>
+            </ion-card>
+        </ion-col>
+
+    </ion-row>
+</ion-grid>

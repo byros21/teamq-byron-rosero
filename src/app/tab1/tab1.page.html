@@ -6,12 +6,21 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" style="">
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div style="height: 100%;">
+
+    <div >
+      <app-componente1 [data]="lista1"></app-componente1>
+    </div>
+
+    <div >
+      <app-componente2 [data]="noticias"></app-componente2>
+    </div>
+
+    <div style="height: 15%; background: #e4e4e4;" class="ion-padding">
+      <app-componente3 [data]="lista2"></app-componente3>
+    </div>
+
+  </div>
 </ion-content>
